@@ -1,0 +1,91 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    background: transparent;
+    overflow: hidden;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+.card {
+    min-width: 520px;
+    padding: 40px 60px;
+
+    border-radius: 28px;
+
+    background: rgba(10, 10, 20, 0.88);
+    border: 3px solid rgba(255, 255, 255, 0.85);
+
+    box-shadow:
+        0 0 40px rgba(120, 80, 255, 0.8),
+        0 0 90px rgba(0, 200, 255, 0.5);
+
+    text-align: center;
+
+    animation: popIn 0.6s ease-out;
+}
+
+.label {
+    font-size: 28px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #ddddff;
+    margin-bottom: 18px;
+}
+
+.winner {
+    font-size: 72px;
+    font-weight: 900;
+
+    color: white;
+    text-shadow:
+        0 0 10px #ffffff,
+        0 0 24px #8a5cff,
+        0 0 40px #00ccff;
+}
+
+.meta {
+    margin-top: 20px;
+
+    font-size: 22px;
+    color: #cccccc;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.4) rotate(-8deg);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.08) rotate(2deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
