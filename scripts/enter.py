@@ -43,9 +43,7 @@ def main() -> None:
     added = add_user(username)
 
     if added:
-        print(f"{username} ist jetzt eingetragen.")
-    else:
-        print(f"{username} ist bereits eingetragen.")
+        print(f"{username} added")
 
 
 if __name__ == "__main__":
