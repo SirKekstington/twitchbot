@@ -1,0 +1,3 @@
+EstProfitToday=0
+LostToday=0
+UpdatedAt=16.05.26 13:46:06
